@@ -134,7 +134,7 @@ CREATE TABLE catcafe.dbo.Adoptions
   employee_id Int,
   cat_id Int,
   adoption_fee Money NOT NULL, 
-  date DateTime,
+  adoption_date DateTime,
   FOREIGN KEY (cat_id) REFERENCES cats(cat_id),
   FOREIGN KEY (membershipId) REFERENCES MemberSignup(membershipId),
   FOREIGN KEY (employee_id) REFERENCES Employee(employee_id)
