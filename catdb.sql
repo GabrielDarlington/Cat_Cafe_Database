@@ -46,6 +46,25 @@ CREATE TABLE catcafe.dbo.Ingredients
   is_known_allergen bit NOT NULL,
 );
 
+CREATE TABLE catcafe.dbo.Recipes
+(
+  item_name Varchar(50) PRIMARY KEY,
+  price Money, 
+  serving_Size Int,
+  calories_per_serving Int NOT NULL,
+);
+
+CREATE TABLE cacafe.dbo.RecipeIngredients
+(
+  item_id Int Identity(1,1),
+  ingredient_name Varchar(255),
+  item_name Varchar(50),
+  quantity Int NOT NULL,
+  calories Int NOT NULL,
+  FOREIGN KEY (ingredient_name) REFERENCES Ingredients(ingredient_name),
+  FOREIGN KEY (item_name) REFERENCES Recipes(item_name)
+);
+
 CREATE TABLE catcafe.dbo.Employee_pay
 (
   employee_id Int,
