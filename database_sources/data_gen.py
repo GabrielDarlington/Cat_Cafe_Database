@@ -1,7 +1,10 @@
-import re
-import os
 import pandas as pd
 from random import randint, randrange, choice
+
+def names():
+    first = open("./data_files/first_name.txt").read().split()
+    last = open("./data_files/last_name.txt").read().split()
+    return [choice(first), choice(last)]
 
 def phone_number():
     first_three = randrange(100,999)
@@ -28,9 +31,9 @@ def email(first: str, last: str) -> str:
 def address():
     compass = ["N","E","S","W"]
     street_suff = ["Dr", "Ave", "Cir", "Blvd", "Way", "St"]
-    df = pd.read_csv("utah_cities.csv")
-    street1 = open("trees.txt").read().split()
-    street2 = open("Utah_specific_streets.txt").read().split()
+    df = pd.read_csv("./data_files/utah_cities.csv")
+    street1 = open("./data_files/trees.txt").read().split()
+    street2 = open("./data_files/Utah_specific_streets.txt").read().split()
     zip, city, state = df.iloc[randint(1,len(df)-1)]
     street_choice = randint(1,4)
 
@@ -44,15 +47,10 @@ def address():
         case 4:
             return [f"{randint(0,9000)} {choice(compass)} {choice(street1).capitalize()} {choice(street_suff)}"  , city, state, zip]
         
-def names():
-    first = open("first_name.txt").read().split()
-    last = open("last_name.txt").read().split()
-    return [choice(first), choice(last)]
 
-
-if __name__ == "__main__":
+def emp_and_pers():
      manager_count = 0
-     with open("members.txt", "w") as mem, open("employees.txt", "w") as emp:
+     with open("./data_files/members.txt", "w") as mem, open("./data_files/employees.txt", "w") as emp:
         for i in range(150):
             first, last = names()
             street, city, state, zip = address()
@@ -88,3 +86,23 @@ if __name__ == "__main__":
                     emp.write(
                     f"""INSERT INTO catcafe.dbo.Employee VALUES('{first}','{last}','{phone}','{street}','{city}','{state}','{zip}',0,0,{sick_days},{vacation_days})\n"""
                     )
+
+
+def vet():
+    with open("./output_files/vets.txt", "w") as vet:
+        for i in range(1,11):
+            phone = phone_number()
+            first, last = names()
+            vet.write(f"INSERT INTO catcafe.dbo.Veterenarians VALUES({i},'{first}','{last}','{phone}')\n")
+
+def cat():
+    cats = open('./data_files/first_name.txt/breeds.txt').read().split()
+    with open("./output_files/cats.txt", "w") as cat:
+        for i in range(30):
+            cat.write(f"INSERT INTO catcafe.dbo.Cats VALUES({randint(0,9999)}, NAME, {choice(cats)}, HEALTH, {randint(1,10)})\n")
+
+
+if __name__ == "__main__":
+    emp_and_pers()
+    vet()
+    cat()
