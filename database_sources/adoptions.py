@@ -23,7 +23,6 @@ def emp_schedule():
             else:
                 sched.write(f"INSERT INTO catcafe.dco.Adoptions VALUES({i},'Adoptions','{emp_days}')\n")
 
-
 if __name__=="__main__":
     cat_ids = [4097, 5755, 9633, 4701, 2195, 2939, 2148, 2449, 4549, 5260, 9104, 5152, 7721, 4841, 7366,
     7044, 2551, 9006, 5150, 8356, 5305, 920, 1862, 3513, 5725, 9166, 9489, 8874, 2996, 8025, 
