@@ -1,6 +1,6 @@
 -- CREATE DATABASE catcafe;
 
-CREATE TABLE catcafe.dbo.MemberSignup
+CREATE TABLE catcafe.dbo.MemberSignup -- data added
 (
 membershipID Int Identity(1000,1) PRIMARY KEY,
 first_name varchar(50) NOT NULL, 
@@ -12,7 +12,7 @@ state varchar(50) NOT NULL,
 zip_code varchar(8) NOT NULL
 );
 
-CREATE TABLE catcafe.dbo.Employee
+CREATE TABLE catcafe.dbo.Employee -- data added
 (
   employee_id Int Identity(100,10) PRIMARY KEY,
   first_name varchar(50) NOT NULL, 
@@ -26,13 +26,6 @@ CREATE TABLE catcafe.dbo.Employee
   is_volunteer BIT NOT NULL, 
   sick_days_left Int NOT NULL, 
   vacation_days_left Int NOT NULL 
-);
-
-CREATE TABLE catcafe.dbo.CafeInventory
-(
-  ItemId Int PRIMARY KEY,
-  ItemName Varchar(50),
-  Stock Int,
 );
 
 CREATE TABLE catcafe.dbo.Ingredients
@@ -65,7 +58,7 @@ CREATE TABLE cacafe.dbo.RecipeIngredients
   FOREIGN KEY (item_name) REFERENCES Recipes(item_name)
 );
 
-CREATE TABLE catcafe.dbo.Employee_pay
+CREATE TABLE catcafe.dbo.Employee_pay -- data added
 (
   employee_id Int,
   pay_rate Money NOT NULL,
@@ -76,7 +69,7 @@ CREATE TABLE catcafe.dbo.Employee_pay
   FOREIGN KEY (employee_id) REFERENCES Employee(employee_id)
 );
 
-CREATE TABLE catcafe.dbo.Schedule
+CREATE TABLE catcafe.dbo.Schedule -- data added
 (
   employee_id Int PRIMARY KEY,
   cafe_or_adoptions VARCHAR(10),
@@ -109,7 +102,7 @@ CREATE TABLE catcafe.dbo.CafePurchases
   FOREIGN KEY (employee_id) REFERENCES Employee(employee_id)
 );
 
-CREATE TABLE catcafe.dbo.Veterenarians
+CREATE TABLE catcafe.dbo.Veterenarians -- data added
 (
   vetID Int PRIMARY KEY,
   first_name varchar(50) NOT NULL, 
@@ -117,7 +110,7 @@ CREATE TABLE catcafe.dbo.Veterenarians
   office_number varchar(10) NOT NULL
 );
 
-CREATE TABLE catcafe.dbo.Cats
+CREATE TABLE catcafe.dbo.Cats -- data added
 (
   cat_id Int PRIMARY KEY,
   cat_name varchar(50) NOT NULL, 
@@ -127,7 +120,7 @@ CREATE TABLE catcafe.dbo.Cats
   FOREIGN KEY (vetID) REFERENCES Veterenarians(vetID) 
 );
 
-CREATE TABLE catcafe.dbo.Adoptions
+CREATE TABLE catcafe.dbo.Adoptions -- data added
 (
   adoptionID Int PRIMARY KEY,
   membershipID Int,

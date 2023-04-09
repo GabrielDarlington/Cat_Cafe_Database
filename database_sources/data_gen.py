@@ -96,13 +96,16 @@ def vet():
             vet.write(f"INSERT INTO catcafe.dbo.Veterenarians VALUES({i},'{first}','{last}','{phone}')\n")
 
 def cat():
-    cats = open('./data_files/first_name.txt/breeds.txt').read().split()
-    with open("./output_files/cats.txt", "w") as cat:
-        for i in range(30):
-            cat.write(f"INSERT INTO catcafe.dbo.Cats VALUES({randint(0,9999)}, NAME, {choice(cats)}, HEALTH, {randint(1,10)})\n")
-
+    cats = open('./data_files/breeds.txt').read().split()
+    adopted_cats = []
+    with open("./output_files/cats2.txt", "w") as cat:
+        for i in range(150):
+            num = randint(0,9999)
+            adopted_cats.append(num)
+            cat.write(f"INSERT INTO catcafe.dbo.Cats VALUES({num}, 'NAME', '{choice(cats)}', 'HEALTH', {randint(1,10)})\n")
+    print(adopted_cats)
 
 if __name__ == "__main__":
-    emp_and_pers()
-    vet()
+    # emp_and_pers()
+    # vet()
     cat()
