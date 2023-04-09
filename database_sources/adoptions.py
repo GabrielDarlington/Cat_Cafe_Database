@@ -2,11 +2,12 @@ from random import randint, choice
 from datetime import datetime, timedelta
 
 
-def adoptions(cat_ids, member_id, adoption_id, emp_id, adoption_fee, adoption_date):
+def adoptions(adoption_id,member_id, emp_id,cat_ids,adoption_fee, adoption_date):
     with open('./data_files/adoptions.txt', 'w') as adopt:
         for i in range(150):
+            print(i)
             entry = "INSERT INTO catcafe.dco.Adoptions VALUES({},{},{},{},{},'{}')\n".format(
-            cat_ids[i], member_id[i], adoption_id[i], choice(emp_id), choice(adoption_fee),adoption_date[i]
+            adoption_id[i],member_id[i],choice(emp_id),cat_ids[i],choice(adoption_fee),adoption_date[i]
             )
             adopt.write(entry)
 
@@ -37,13 +38,13 @@ if __name__=="__main__":
     8106, 1463, 8917, 4732, 2793, 1867, 7831]
 
     member_id = [i+1000 for i in range(150)]
-    adoption_id = [(i*2)+10000 for i in range(150)]
+    adoption_id = [(i*randint(1,7))+10000 for i in range(150)]
     emp_id = [140,190,210]
     adoption_fee = [0,25,50,75,100,125,150,175]
     adoption_date = [
         (datetime.now() + timedelta(days=randint(-300,-5))).strftime('%Y-%m-%d') for i in range(150)
     ]
 
-
-    # adoptions(cat_ids, member_id, adoption_id, emp_id, adoption_fee, adoption_date)
-    emp_schedule()
+    print(adoption_id)
+    adoptions(adoption_id,member_id, emp_id,cat_ids,adoption_fee, adoption_date)
+    # emp_schedule()

@@ -8,7 +8,7 @@ last_name varchar(50) NOT NULL,
 phone_number varchar(10) NOT NULL, 
 street_address varchar(50) NOT NULL, 
 city varchar(50) NOT NULL, 
-state varchar(50) NOT NULL, 
+state_loc varchar(50) NOT NULL, -- State is a reserved word. Should probably change it?
 zip_code varchar(8) NOT NULL
 );
 
@@ -19,7 +19,8 @@ CREATE TABLE catcafe.dbo.Employee -- data added
   last_name varchar(50) NOT NULL, 
   street_address varchar(50) NOT NULL, 
   city varchar(50) NOT NULL, 
-  zip_code varchar(50) NOT NULL, 
+  state_loc varchar(50) NOT NULL,
+  zip_code varchar(50) NOT NULL,
   phone_number varchar(10) NOT NULL, 
   job_description varchar(150) NOT NULL, 
   is_manager BIT NOT NULL, 
