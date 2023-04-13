@@ -13,11 +13,11 @@ Bambino
 Bengal
 Birman
 Bombay
-Brazilian Shorthair
+Brazilian Shorthairf
 British Semi-longhair
 British Longhair
 British Shorthair
-British Longhair
+British Wirehair
 Burmese
 Burmilla
 California Spangle
@@ -27,12 +27,12 @@ Chausie
 Cheetoh
 Colorpoint Shorthair
 Cornish Rex
-Cymric, or Manx Longhair
+Cymric
 Cyprus
 Devon Rex
-Donskoy, or Don Sphynx
+Donskoy
 Dragon Li
-Dwarf cat, or Dwelf
+Dwarf cat
 Egyptian Mau
 European Shorthair
 Exotic Shorthair
@@ -45,7 +45,7 @@ Japanese Bobtail
 Javanese
 Karelian Bobtail
 Khao Manee
-Korat	Thailand
+Korat Thailand
 Korean Bobtail
 Korn Ja
 Kurilian Bobtail
@@ -62,19 +62,16 @@ Norwegian Forest cat
 Ocicat
 Ojos Azules
 Oregon Rex
-Oriental Bicolor
-Oriental Shorthair
-Oriental Longhair
+Oriental
 PerFold
-Persian (Modern Persian Cat)
-Persian (Traditional Persian Cat)
+Persian
 Peterbald
 Pixie-bob
 Raas
 Ragamuffin
 Ragdoll
 Russian Blue
-Russian White, Black and Tabby
+Russian White
 Sam Sawe
 Savannah
 Scottish Fold

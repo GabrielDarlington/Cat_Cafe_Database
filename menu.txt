@@ -2,21 +2,41 @@
 Regular Coffee 
 Regular Espresso 
 Regular Macchiato 
-Hazelnut Soy Milk Latte (Coffee, Soy Milk, Hazelnut, Creamer, Hazelnut Syrup) 
-Peppermint Macchiato (Macchiatto, Pepper Syrup, Chocolate Syrup)
-Irish Cream Espresso (Espresso, Silk Creamer, Irish Cream) 
-Caramel Almond Milk Steamer (Almond Milk, Vanilla Syrup, Caramel Syrup)
+Hazelnut Soy Milk Latte
+Peppermint Macchiato
+Irish Cream Espresso
+Caramel Almond Milk Steamer
 Apple Juice
 Orange Juice 
-Iced White Chocolate Frappucinno (Coffee, White Chocolate Syrup, French Creamer, Ice)
-Dark Chocolate Macchiato (Macchiato, Dark Chocolate Syrup) 
-Chocolate Hazelnut Iced Coffee (Coffee, Hazelnut, Chocolate Syrup, Whole Milk, Ice) 
-Parfait (Strawberry, Blueberry, Raspberry, Blackberry, Granola, Vanilla Yogurt) 
-Breakfast Smoothie (Banana, Raspberry, Strawberry, Ice, Yogurt) 
-Sausage Kale Egg Scramble (Sausage, Kale, Egg, Cheddar Cheese, Salt) 
-Bacon Cheese Bagel Sandwhich (Bagel, Bacon, Eggs, Cheddar Cheese, Butter) 
-Cream Cheese and Strawberry Bagel (Bagel, Strawberry, Cream Cheese)
-Whipped Brown Sugar Cream Fruit Dip (Cream Cheese, Brown Sugar, Strawberries, Apples) 
-Candied Bacon  (Bacon, Brown Sugar, Sugar,) 
-Spinach Salad (Spinach, Shredded Mozzerella Cheese, Eggs, Bacon, Balsamic Vinagrette)
+Iced White Chocolate Frappucinno
+Dark Chocolate Macchiato
+Chocolate Hazelnut Iced Coffee
+Parfait
+Breakfast Smoothie
+Sausage Kale Egg Scramble
+Bacon Cheese Bagel Sandwhich
+Cream Cheese and Strawberry Bagel
+Whipped Brown Sugar Cream Fruit Dip
+Candied Bacon
+Spinach Salad
 
+'Regular Coffee'
+'Regular Espresso'
+'Regular Macchiato'
+'Hazelnut Soy Milk Latte' '(Coffee, Soy Milk, Hazelnut, Creamer, Hazelnut Syrup)'
+'Peppermint Macchiato','(Macchiatto, Pepper Syrup, Chocolate Syrup)'
+'Irish Cream Espresso' '(Espresso, Silk Creamer, Irish Cream)'
+'Caramel Almond Milk Steamer','(Almond Milk, Vanilla Syrup, Caramel Syrup)'
+'Apple Juice'
+'Orange Juice'
+'Iced White Chocolate Frappucinno' '(Coffee, White Chocolate Syrup, French Creamer, Ice)'
+'Dark Chocolate Macchiato' '(Macchiato, Dark Chocolate Syrup)' 
+'Chocolate Hazelnut Iced Coffee' '(Coffee, Hazelnut, Chocolate Syrup, Whole Milk, Ice)'
+'Parfait' '(Strawberry, Blueberry, Raspberry, Blackberry, Granola, Vanilla Yogurt)'
+'Breakfast Smoothie''(Banana, Raspberry, Strawberry, Ice, Yogurt)'
+'Sausage Kale Egg Scramble' '(Sausage, Kale, Egg, Cheddar Cheese, Salt)'
+'Bacon Cheese Bagel Sandwhich' '(Bagel, Bacon, Eggs, Cheddar Cheese, Butter)'
+'Cream Cheese and Strawberry Bagel' '(Bagel, Strawberry, Cream Cheese)'
+'Whipped Brown Sugar Cream Fruit Dip' '(Cream Cheese, Brown Sugar, Strawberries, Apples)'
+'Candied Bacon' '(Bacon, Brown Sugar, Sugar,)'
+'Spinach Salad' '(Spinach, Shredded Mozzerella Cheese, Eggs, Bacon, Balsamic Vinagrette)'
