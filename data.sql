@@ -369,7 +369,7 @@ INSERT INTO catcafe.dbo.Cats VALUES(9173, 'Pinata', 'Scottish Fold', 'Healthy', 
 INSERT INTO catcafe.dbo.Cats VALUES(8136, 'Dutchess Biscuits of Cattingham', 'Maine Coon', 'Very bad anxiety, prescribed some anti-anxiety', 8)
 INSERT INTO catcafe.dbo.Cats VALUES(5259, 'Serephina', 'Oriental', 'Very bad anxiety, prescribed some anti-anxiety', 4)
 INSERT INTO catcafe.dbo.Cats VALUES(3628, 'Barbie', 'Korean Bobtail', 'Very bad anxiety, prescribed some anti-anxiety', 9)
-INSERT INTO catcafe.dbo.Cats VALUES(9048, '', 'Havana Brown', 'Very bad anxiety, prescribed some anti-anxiety', 10)
+INSERT INTO catcafe.dbo.Cats VALUES(9048, 'Fidel Catstro', 'Havana Brown', 'Very bad anxiety, prescribed some anti-anxiety', 10)
 INSERT INTO catcafe.dbo.Cats VALUES(4631, 'Francois', 'Chartreux', 'Healthy', 9)
 INSERT INTO catcafe.dbo.Cats VALUES(1089, 'Forrest Gump', 'Thai', 'Healthy', 7)
 INSERT INTO catcafe.dbo.Cats VALUES(7531, 'Gumbo', 'Tabby', 'Healthy', 5)
