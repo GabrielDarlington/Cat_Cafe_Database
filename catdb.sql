@@ -58,6 +58,14 @@ CREATE TABLE catcafe.dbo.RecipeIngredients
   FOREIGN KEY (menu_item) REFERENCES Recipes(menu_item)
 );
 
+CREATE TABLE catcafe.dbo.CafeMenu
+(
+  menu_item Varchar(50) PRIMARY KEY,
+  price Money,
+  calories Int,
+  FOREIGN KEY (menu_item) REFERENCES Recipes(menu_item)
+)
+
 CREATE TABLE catcafe.dbo.Employee_pay -- data added
 (
   employee_id Int,

@@ -578,7 +578,7 @@ INSERT INTO catcafe.dbo.Ingredients VALUES('Sausage','1 patty','114','0','7','10
 INSERT INTO catcafe.dbo.Ingredients VALUES('Bacon','1 slice','32','0','3','2','1')
 INSERT INTO catcafe.dbo.Ingredients VALUES('Kale','1 cup','9','1','1','0','1')
 INSERT INTO catcafe.dbo.Ingredients VALUES('Spinach','100g','28','3','3','1','1')
--- 
+
 -- INSERT INTO catcafe.dbo.CafeMenu VALUES('Regular Coffee',2.50)
 -- INSERT INTO catcafe.dbo.CafeMenu VALUES('Regular Espresso',3.00)
 -- INSERT INTO catcafe.dbo.CafeMenu VALUES('Regular Macchiato',3.00)
