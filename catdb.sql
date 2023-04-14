@@ -2,14 +2,14 @@
 
 CREATE TABLE catcafe.dbo.MemberSignup -- data added
 (
-membershipID Int Identity(1000,1) PRIMARY KEY,
-first_name varchar(50) NOT NULL, 
-last_name varchar(50) NOT NULL, 
-phone_number varchar(10) NOT NULL, 
-street_address varchar(50) NOT NULL, 
-city varchar(50) NOT NULL, 
-state_loc varchar(50) NOT NULL, -- State is a reserved word. Should probably change it?
-zip_code varchar(8) NOT NULL
+  membershipID Int Identity(1000,1) PRIMARY KEY,
+  first_name varchar(50) NOT NULL, 
+  last_name varchar(50) NOT NULL, 
+  phone_number varchar(10) NOT NULL, 
+  street_address varchar(50) NOT NULL, 
+  city varchar(50) NOT NULL, 
+  state_loc varchar(50) NOT NULL, -- State is a reserved word. Should probably change it?
+  zip_code varchar(8) NOT NULL
 );
 
 CREATE TABLE catcafe.dbo.Employee -- data added
