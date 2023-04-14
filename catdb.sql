@@ -32,30 +32,30 @@ CREATE TABLE catcafe.dbo.Employee -- data added
 CREATE TABLE catcafe.dbo.Ingredients
 (
   ingredient_name Varchar(255) PRIMARY KEY,
+  serving_size varchar(50),
   calories Int NOT NULL,
   carbohydrates Int NOT NULL,
   protein Int NOT NULL,
-  fat Int NOT NULL,
-  amount_in_stock Int, 
+  fat Int NOT NULL, 
   is_known_allergen bit NOT NULL,
 );
 
 CREATE TABLE catcafe.dbo.Recipes
 (
-  item_name Varchar(50) PRIMARY KEY,
+  menu_item Varchar(50) PRIMARY KEY,
   price Money, 
   serving_Size Int,
   calories_per_serving Int NOT NULL,
 );
 
-CREATE TABLE cacafe.dbo.RecipeIngredients
+CREATE TABLE catcafe.dbo.RecipeIngredients
 (
-  item_id Int Identity(1,1),
+  menu_item VARCHAR(50) PRIMARY KEY,
   ingredient_name Varchar(255),
   item_name Varchar(50),
   calories Int NOT NULL,
   FOREIGN KEY (ingredient_name) REFERENCES Ingredients(ingredient_name),
-  FOREIGN KEY (item_name) REFERENCES Recipes(item_name)
+  FOREIGN KEY (menu_item) REFERENCES Recipes(menu_item)
 );
 
 CREATE TABLE catcafe.dbo.Employee_pay -- data added
@@ -77,17 +77,6 @@ CREATE TABLE catcafe.dbo.Schedule -- data added
   FOREIGN KEY (employee_id) REFERENCES Employee(employee_id)
 );
 
-CREATE TABLE catcafe.dbo.CafeMenu
-(
-  menu_Item varchar(50) PRIMARY KEY,
-  itemId int,
-  ingredient_name varchar(255),
-  estimated_calories Int NOT NULL, 
-  price Money NOT NULL, 
-  FOREIGN KEY (ingredient_name) REFERENCES Ingredients(ingredient_name),
-  FOREIGN KEY (itemId) REFERENCES CafeInventory(itemId)
-);
-
 CREATE TABLE catcafe.dbo.CafePurchases
 (
   purchase_id int PRIMARY KEY,
@@ -97,7 +86,7 @@ CREATE TABLE catcafe.dbo.CafePurchases
   date DateTime NOT NULL, 
   tax Money NOT NULL, 
   total Money NOT NULL, 
-  FOREIGN KEY (menu_item) REFERENCES CafeMenu(menu_item),
+  FOREIGN KEY (menu_item) REFERENCES Recipes(menu_item),
   FOREIGN KEY (membershipId) REFERENCES MemberSignup(membershipId),
   FOREIGN KEY (employee_id) REFERENCES Employee(employee_id)
 );
