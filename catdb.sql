@@ -31,8 +31,7 @@ CREATE TABLE catcafe.dbo.Employee -- data added
 
 CREATE TABLE catcafe.dbo.Recipes
 (
-  menu_item Varchar(50) PRIMARY KEY,
-  price Money, 
+  menu_item Varchar(50) PRIMARY KEY, 
   serving_Size Int,
   calories_per_serving Int NOT NULL,
 );
@@ -66,13 +65,13 @@ CREATE TABLE catcafe.dbo.Schedule -- data added
 
 CREATE TABLE catcafe.dbo.CafePurchases
 (
-  purchase_id int PRIMARY KEY,
+  purchase_id int NOT NULL,
   menu_item varchar(50),
   membershipID Int,
   employee_id Int,
-  date DateTime NOT NULL, 
-  tax Money NOT NULL, 
-  total Money NOT NULL, 
+  purchase_date DateTime NOT NULL,
+  tax Money NOT NULL,
+  total Money NOT NULL,
   FOREIGN KEY (menu_item) REFERENCES Recipes(menu_item),
   FOREIGN KEY (membershipId) REFERENCES MemberSignup(membershipId),
   FOREIGN KEY (employee_id) REFERENCES Employee(employee_id)
