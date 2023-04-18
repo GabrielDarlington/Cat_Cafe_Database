@@ -29,33 +29,12 @@ CREATE TABLE catcafe.dbo.Employee -- data added
   vacation_days_left Int NOT NULL 
 );
 
-CREATE TABLE catcafe.dbo.Ingredients
-(
-  ingredient_name Varchar(255) PRIMARY KEY,
-  serving_size varchar(50),
-  calories Int NOT NULL,
-  carbohydrates Int NOT NULL,
-  protein Int NOT NULL,
-  fat Int NOT NULL, 
-  is_known_allergen bit NOT NULL,
-);
-
 CREATE TABLE catcafe.dbo.Recipes
 (
   menu_item Varchar(50) PRIMARY KEY,
   price Money, 
   serving_Size Int,
   calories_per_serving Int NOT NULL,
-);
-
-CREATE TABLE catcafe.dbo.RecipeIngredients
-(
-  menu_item VARCHAR(50) PRIMARY KEY,
-  ingredient_name Varchar(255),
-  item_name Varchar(50),
-  calories Int NOT NULL,
-  FOREIGN KEY (ingredient_name) REFERENCES Ingredients(ingredient_name),
-  FOREIGN KEY (menu_item) REFERENCES Recipes(menu_item)
 );
 
 CREATE TABLE catcafe.dbo.CafeMenu
@@ -129,6 +108,4 @@ CREATE TABLE catcafe.dbo.Adoptions -- data added
   FOREIGN KEY (membershipId) REFERENCES MemberSignup(membershipId),
   FOREIGN KEY (employee_id) REFERENCES Employee(employee_id)
 );
-
-
 

@@ -92,8 +92,8 @@ CREATE PROCEDURE get_date
 AS
 SELECT GETDATE() 
 GO;
-EXEC get_date;
 
+EXEC get_date;
 
 SELECT DATEPART(WEEKDAY, GETDATE()) AS daynum
 
