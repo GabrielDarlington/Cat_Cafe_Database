@@ -31,8 +31,17 @@ INSERT INTO catcafe.dbo.Cats VALUES(2, 'Poptart', 'Nyan', 'Healthy', 4);
 UPDATE Cats
 SET cat_health = 'Healthy'
 WHERE
-cat_health ='Spay/Neuter procedure done' OR cat_health = 'Risk of obesity, monitor diet' OR cat_health = 'Diabetes, low carb diet w/ insulin' OR cat_health = 'FLUTD, increase fluid intake and see vet again'
-OR cat_health = 'Treated for worms' OR cat_health = 'Obesity, Weight Loss diet needed'; 
+       cat_health ='Spay/Neuter procedure done' 
+    OR cat_health = 'Risk of obesity, monitor diet' 
+    OR cat_health = 'Diabetes, low carb diet w/ insulin' 
+    OR cat_health = 'FLUTD, increase fluid intake and see vet again'
+    OR cat_health = 'Treated for worms' 
+    OR cat_health = 'Obesity, Weight Loss diet needed'; 
+
+-- We can possibly do:
+-- UPDATE CATS
+-- SET cat_health = 'Healthy'
+-- WHERE cat_health NOT 'Healthy'
 
 -- 5. 
 -- Explanation: Deletes members that aren't from Utah
@@ -46,7 +55,12 @@ DELETE FROM MemberSignup WHERE state_loc != 'Utah';
 -- Demonstration: Demonstrate how to use aggregate functions 
 -- Business Rule: Shows important Business information. 
 
-SELECT COUNT(adoptionID) AS amount_of_adoptions, SUM(adoption_fee) AS Adoption_fee_sums , Max(adoption_date) AS Max_date, FLOOR(AVG(adoption_fee)) AS Average_adoption_fee FROM Adoptions;   
+SELECT 
+    COUNT(adoptionID) AS amount_of_adoptions, 
+    SUM(adoption_fee) AS Adoption_fee_sums, 
+    Max(adoption_date) AS Max_date, 
+    FLOOR(AVG(adoption_fee)) AS Average_adoption_fee 
+FROM Adoptions;   
 
 -- 7.  
 -- Demonstration: Shows how to use Subqueries 
@@ -82,6 +96,7 @@ EXEC get_date;
 
 
 SELECT DATEPART(WEEKDAY, GETDATE()) AS daynum
+
 --  10. 
 -- Demonstrate how to use a Select into statement 
 -- Explanation 
